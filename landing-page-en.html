@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURE COTTON | Perfume with the comfort of clouds</title>
+    <meta name="description"
+        content="PURE COTTON. A cotton-scented perfume that captures the essence of clean linen and blue skies.">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo" id="nav-home">PURE COTTON</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#story">Story</a></li>
+                <li><a href="#inquiry">Inquiry</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <a href="landing-page.html">KR</a>
+                <span style="color: rgba(0,0,0,0.1);">|</span>
+                <a href="landing-page-en.html" class="active">EN</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Cozy Moments<br>Like Wearing Clouds</h1>
+            <p>Experience the scent of fresh morning air and soft linen.</p>
+            <a href="#product" class="btn" id="hero-cta">View Product</a>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="section" id="product">
+        <div class="product-grid">
+            <div class="product-image">
+                <img src="./assets/perfume.png" alt="PURE COTTON Perfume Bottle" id="main-product-img">
+            </div>
+            <div class="product-info">
+                <span class="tagline">The Essence of Comfort</span>
+                <h2>PURE COTTON Eau de Parfum</h2>
+                <p>
+                    Captured the essence of cotton. From the initial coolness to the lingering warmth,
+                    it provides the pleasant freshness of wearing a freshly laundered shirt.
+                </p>
+                <div class="features">
+                    <div class="feature-item">Lasts 6-8 hours</div>
+                    <div class="feature-item">Natural Essential Oils</div>
+                    <div class="feature-item">Hypoallergenic Tested</div>
+                    <div class="feature-item">Vegan Certified</div>
+                </div>
+                <div style="margin-top: 3rem;">
+                    <a href="#inquiry" class="btn" style="background-color: var(--text-dark);">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="section story" id="story">
+        <div class="story-content">
+            <span class="tagline" style="color: var(--text-light);">Our Story</span>
+            <h2>Inspiration from the Sky</h2>
+            <p>
+                We thought about what the most comfortable state is.
+                Light like cumulus clouds in a blue sky,
+                warm like a sun-dried cotton duvet.
+                PURE COTTON will be the softest comma in your daily life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Inquiry Section -->
+    <section class="section inquiry" id="inquiry">
+        <div class="inquiry-container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2>Inquiry</h2>
+                <p>Please fill out the form below for partnership or bulk purchase inquiries.</p>
+            </div>
+            <form id="contact-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea rows="5" placeholder="Enter your inquiry" required></textarea>
+                <button type="submit" class="btn" style="border: none; cursor: pointer; width: 100%;">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="logo" style="margin-bottom: 1rem;">PURE COTTON</div>
+        <p>&copy; 2026 PURE COTTON Co. All rights reserved.</p>
+        <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem;">
+            CEO: Gil-dong Hong | 123 Teheran-ro, Gangnam-gu, Seoul | Business Registration: 123-45-67890
+        </p>
+    </footer>
+
+    <script>
+        // Simple scroll effect for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.padding = '0.5rem 0';
+                header.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+            } else {
+                header.style.padding = '1rem 0';
+                header.style.boxShadow = 'none';
+            }
+        });
+
+        // Form submission alert
+        document.getElementById('contact-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Your inquiry has been successfully sent. Thank you!');
+            e.target.reset();
+        });
+    </script>
+</body>
+
+</html>
